@@ -10,9 +10,6 @@
 # Design Pattern
  - MVVM
 
-# Designing Tool
- - Sketch
-
 # Libraries
  - Retrofit REST Client
  - Dagger 2
