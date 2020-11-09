@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iwg_main_graph"
+    app:startDestination="@id/initial_fragment">
+
+    <action
+        android:id="@+id/actionGlobalIWGHomeFragment"
+        app:destination="@id/initial_fragment" />
+    <fragment
+        android:id="@+id/initial_fragment"
+        android:name="com.gayathri.jokesbook.ui.view.InitialFragment"
+        android:label="InitialFragment"
+        tools:layout="@layout/fragment_initial">
+
+        <action
+            android:id="@+id/action_initial_fragment_to_typesFragment"
+            app:destination="@id/typesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/typesFragment"
+        android:name="com.gayathri.jokesbook.ui.view.TypesFragment"
+        android:label="TypesFragment"
+        tools:layout="@layout/fragment_types">
+        <action
+            android:id="@+id/action_typesFragment_self"
+            app:destination="@id/typesFragment" />
+        <action
+            android:id="@+id/action_typesFragment_to_punchLineFragment"
+            app:destination="@id/punchLineFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/punchLineFragment"
+        android:name="com.gayathri.jokesbook.ui.view.PunchLineFragment"
+        android:label="PunchLineFragment"
+        tools:layout="@layout/fragment_punchline">
+
+        <argument
+            android:name="punchLine"
+            app:argType="string"
+            android:defaultValue="string" />
+
+        <argument
+            android:name="position"
+            app:argType="integer"/>
+    </fragment>
+
+</navigation>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JokesBook</string>
+
+    <string name="fancy_a_joke">Fancy A Joke?</string>
+    <string name="click_me">Click Me!</string>
+
+    <string name="general">General</string>
+    <string name="programming">Programming</string>
+    <string name="knock">Knock Knock</string>
+
+    <string name="no_internet">No or poor internet connection</string>
+    <string name="try_again_later">Something went wrong, try again.</string>
+</resources>
